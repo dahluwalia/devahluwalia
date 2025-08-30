@@ -1,0 +1,105 @@
+/* Education page specific styles - most styling now comes from SharedStyles.css */
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1.25rem);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  text-align: center; /* Center all text content */
+}
+
+.education-item .card-accent {
+  height: 0.25rem; /* 4px */
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--primary-blue-hover),
+    #2196f3
+  );
+}
+
+/* Education Cards */
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 181, 246, 0.3);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(1.25rem);
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center all text content */
+}
+
+.education-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.3);
+  border-color: rgba(100, 181, 246, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.education-card.berkeley {
+  border-color: rgba(100, 181, 246, 0.3);
+}
+
+.education-card.berkeley:hover {
+  border-color: rgba(100, 181, 246, 0.5);
+  box-shadow: 0 0.5rem 1.875rem rgba(100, 181, 246, 0.15);
+}
+
+.education-courses {
+  font-family: var(--font-readable);
+  font-size: 1.125rem;
+  color: var(--color-light);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.education-course-item {
+  font-family: var(--font-readable);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.education-course-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.education-course-item:hover {
+  color: var(--primary-blue);
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments for education items */
+@media (max-width: 47.9375rem) {
+  .education-item {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .education-card {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+  .education-item {
+    padding: 2rem;
+  }
+}

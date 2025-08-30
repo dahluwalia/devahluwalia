@@ -1,0 +1,60 @@
+/* Contact page specific styles - most styling now comes from SharedStyles.css */
+
+/* Contact form styling */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 181, 246, 0.3);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(1.25rem);
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.3);
+  border-color: rgba(100, 181, 246, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-submit-btn {
+  font-family: var(--font-tech);
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Form controls */
+.form-control-custom {
+  font-family: var(--font-tech) !important;
+  font-size: 1.125rem !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: var(--color-light) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.form-control-custom:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: var(--primary-blue) !important;
+  box-shadow: 0 0 0 0.2rem rgba(100, 181, 246, 0.25) !important;
+  color: var(--color-light) !important;
+}
+
+.form-control-custom::placeholder {
+  color: var(--color-muted) !important;
+  font-family: var(--font-tech) !important;
+}

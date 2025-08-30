@@ -1,0 +1,13 @@
+/* Professional page specific styles - most styling now comes from SharedStyles.css */
+
+/* Responsive adjustments */
+@media (max-width: 47.9375rem) {
+  .experience-card {
+    padding: 1rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,121 @@
+.navbar {
+  background: rgba(15, 15, 35, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  margin-left: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo {
+  height: 3.5rem;
+  width: auto;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.05);
+}
+
+.navbar-tabs {
+  margin-left: auto;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+
+#navbar-links {
+  font-family: var(--font-tech);
+  color: var(--color-muted) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+#navbar-links:hover {
+  color: var(--primary-blue) !important;
+  background: rgba(100, 181, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+#navbar-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-blue);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+#navbar-links:hover::after {
+  width: 80%;
+}
+
+/* Hamburger menu button styling */
+.navbar-toggler {
+  border: none !important;
+  padding: 0.5rem !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+  .navbar-tabs {
+    margin: 0;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #navbar-links {
+    padding: 0.75rem 1rem !important;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #navbar-links:hover {
+    transform: none;
+  }
+
+  #navbar-links::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-tabs {
+    margin: 0;
+  }
+
+  #navbar-links {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.9rem;
+  }
+}

@@ -21,7 +21,7 @@ function Education() {
       {
         id: 1,
         semester: "Fall 2025",
-        courses: ["Introduction to Operating Systems", "Master's Thesis"],
+        courses: ["Advanced Natural Language Processing", "Masters Thesis"],
       },
       {
         id: 2,
@@ -29,7 +29,7 @@ function Education() {
         courses: [
           "Data Exploration, Cleaning, and Integration",
           "Introduction to Big Data Systems",
-          "Master's Research",
+          "Masters Research",
         ],
       },
       {
@@ -38,7 +38,7 @@ function Education() {
         courses: [
           "Machine Learning",
           "Foundations of Data Management",
-          "Master's Research",
+          "Masters Research",
         ],
       },
     ],

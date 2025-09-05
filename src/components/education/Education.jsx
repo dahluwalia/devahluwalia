@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import CoolNavBar from "../navbar/CoolNavBar";
 import Footer from "../footer/Footer";
 import "../shared/SharedStyles.css";

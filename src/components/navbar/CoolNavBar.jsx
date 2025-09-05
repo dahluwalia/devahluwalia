@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavbarToggle, NavbarCollapse } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "./CoolNavBar.css";
 
 function CoolNavBar() {

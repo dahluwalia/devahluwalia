@@ -29,7 +29,7 @@ function Home() {
           {/* Profile Image Section */}
           <div className="profile-section align-center">
             <img
-              src={require("./dev-ahluwalia-bear.jpg")}
+              src={require("./dev-ahluwalia-bear.webp")}
               alt="Dev Ahluwalia"
               className="profile-image"
             />
